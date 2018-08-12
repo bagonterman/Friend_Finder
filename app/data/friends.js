@@ -2,36 +2,36 @@ friends = [
     {
         "name": "Ahmed",
         "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-        "scores": [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]
+        "scores": [5, 1, 4, 4, 5, 1, 2, 5, 4, 1, 3, 5, 2]
     },
     {
         "name": "Brett",
         "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-        "scores": [1, 3, 2, 1, 5, 3, 2, 5, 4, 1]
+        "scores": [1, 3, 2, 1, 5, 3, 2, 5, 4, 1, 3, 1, 2]
     },
     {
-        "name": "Dummy",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-        "scores": [1, 1, 2, 1, 3, 3, 2, 5, 4, 1]
+        "name": "Chuck Pagano",
+        "photo": "https://i2.wp.com/images.performgroup.com/di/library/sporting_news/a5/5d/03-chuck-pagano-051615-getty-ftrjpg_1499yz04560qe1ak0u2lhb2k9m.jpg?zoom=2",
+        "scores": [1, 1, 2, 1, 3, 3, 2, 5, 4, 1, 3, 2, 2]
     }
 
 ]
-var myScore = [5, 1, 5, 1, 3, 2, 2, 5, 4, 1];
-var differenceArray = [];
-var totalScore = 0;
-for (i = 0; i < friends.length; i++) {
-    for (j = 0; j < friends[i].scores.length; j++) {
-        totalScore = totalScore + Math.abs(friends[i].scores[j] - myScore[j])
-    }
-    differenceArray.push(totalScore);///push user score to array
-    totalScore = 0;///reset total for each user
-}
+// var myScore = [5, 1, 5, 1, 3, 2, 2, 5, 4, 1];
+// var differenceArray = [];
+// var totalScore = 0;
+// for (i = 0; i < friends.length; i++) {
+//     for (j = 0; j < friends[i].scores.length; j++) {
+//         totalScore = totalScore + Math.abs(friends[i].scores[j] - myScore[j])
+//     }
+//     differenceArray.push(totalScore);///push user score to array
+//     totalScore = 0;///reset total for each user
+// }
 
-Array.min = function (array) {
-    return Math.min.apply(Math, array);
-};
-var minimum = Array.min(differenceArray);
-$.console.log(minimum);
+// Array.min = function (array) {
+//     return Math.min.apply(Math, array);
+// };
+// var minimum = Array.min(differenceArray);
+// $.console.log(minimum);
 
 // 6. Determine the user's most compatible friend using the following as a guide:
 

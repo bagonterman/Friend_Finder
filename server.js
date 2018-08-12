@@ -20,6 +20,7 @@ var PORT = process.env.PORT || 8080;
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(express.static('app/public'))
 
 // ================================================================================
 // ROUTER
@@ -29,6 +30,8 @@ app.use(bodyParser.json());
 require("./app/routing/api_routes")(app);
 // require("./routing/api_routes")(app);
 require("./app/routing/html_routes")(app);
+
+
 
 // =============================================================================
 // LISTENER

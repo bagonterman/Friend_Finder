@@ -10,7 +10,7 @@ $(document).ready(function () {
     //     //linkName == "first" ? buildAboutMe() : (linkName == "second" ? buildPortfolio() : (linkName == "third" ? buildContact() : (linkName == "thirdB" ? moreAboutMe() : "default")));
     //     //buttonValue = "container" ? buildQuestion("Question 1", "Favorite smell", "q1", "q2_chosen", 2) : "default";
     // });
-    questions = ["You enjoy skipping.", "Splashing in the mud is fun.", "You often stare into the sun.", "Stepping on legos doesn't bother you.", "You always eat your meat rare.", "Following the rules is for suckers.", "You like ice in your drink.", "Spitting is only acceptable outside.", "Squirrels are the worst animal.", "You enjoy fishing.", "Night time is the right time.", "You shouldn't tug on Superman's cape.", "You look both ways before you cross the street."]
+    questions = ["You enjoy skipping.", "Splashing in the mud is fun.", "You often stare into the sun.", "Stepping on legos doesn't bother you.", "You always eat your meat rare.", "Following the rules is for suckers.", "You like ice in your drink.", "Spitting is only acceptable outside.", "Squirrels are the worst animal.", "You enjoy fishing.", "Night time is the right time.", "You shouldn't tug on Superman's cape.", "You look both ways before you cross the street."];
     buildQuestion(questions)
     function buildQuestion(questions) {
 
